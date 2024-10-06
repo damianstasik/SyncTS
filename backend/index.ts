@@ -8,6 +8,14 @@ export default {
       req: request,
       router: appRouter,
       createContext: () => ({}),
+      responseMeta: () => {
+        return {
+          headers: {
+            "Access-Control-Allow-Origin": "*",
+            "Access-Control-Allow-Methods": "GET,HEAD,POST,OPTIONS",
+          },
+        };
+      },
     });
   },
 };
