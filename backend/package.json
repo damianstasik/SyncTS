@@ -1,0 +1,15 @@
+{
+  "name": "backend",
+  "private": true,
+  "scripts": {
+    "deploy": "wrangler deploy",
+    "dev": "wrangler dev",
+    "cf-typegen": "wrangler types"
+  },
+  "dependencies": {
+    "@prisma/adapter-d1": "^5.20.0",
+    "@trpc/client": "11.0.0-rc.560",
+    "@trpc/server": "11.0.0-rc.560",
+    "wrangler": "^3.80.0"
+  }
+}
